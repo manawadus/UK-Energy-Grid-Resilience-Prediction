@@ -320,7 +320,7 @@ uk-energy-grid-resilience-prediction/
 ├── .gitignore
 
 ├── data/
-│   ├── raw/            # raw data (not included or minimal)
+│   ├── raw/            # raw data (not included due to size and source constraints)
 │   └── processed/      # final dataset used for modelling
 
 ├── notebooks/
