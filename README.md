@@ -330,6 +330,7 @@ This project is based entirely on publicly available data sources. Data acquisit
 ## Repository Structure
 
 ```
+
 uk-energy-grid-resilience-prediction/
 
 ├── README.md
@@ -337,25 +338,44 @@ uk-energy-grid-resilience-prediction/
 ├── .gitignore
 
 ├── data/
-│   ├── raw/            # raw data (not included due to size and source constraints)
-│   └── processed/      # final dataset used for modelling
+│   ├── raw/
+│   └── processed/
+
+├── scripts/
+│   ├── 01_data_acquisition/
+│   │   ├── frequency_download.py
+│   │   └── weather_acquisition.py
+│   │
+│   ├── 02_preprocessing/
+│   │   └── split_generation_yearly.py
+│   │
+│   ├── 03_feature_engineering/
+│   │   ├── frequency_integration.py
+│   │   └── weather_integration.py
+│   │
+│   ├── 04_integration/
+│   │   └── demand_integration.py
+│   │
+│   ├── 05_master_dataset/
+│   │   └── yearly_aggregation.py
+│   │
+│   └── 06_modeling/
+│       └── model_pipeline.py
 
 ├── notebooks/
-│   ├── 01_data_integration.ipynb
-│   ├── 02_gri_construction.ipynb
-│   ├── 03_feature_engineering.ipynb
-│   ├── 04_model_training.ipynb
-│   └── 05_evaluation.ipynb
+│   ├── 01_project_overview.ipynb
+│   └── 02_model_evaluation.ipynb
 
 ├── results/
-│   ├── figures/        # visualisations and plots
-│   └── metrics/        # model performance outputs
+│   ├── figures/
+│   └── metrics/
 
 ├── report/
 │   └── dissertation.pdf
 
 └── docs/
     └── architecture_diagram.png
+
 ```
 ## Author
 
