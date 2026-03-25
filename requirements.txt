@@ -1,1 +1,11 @@
-
+pandas
+numpy
+matplotlib
+scikit-learn
+xgboost
+shap
+jupyter
+requests
+python-dateutil
+pytz
+scipy
