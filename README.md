@@ -2,17 +2,17 @@
 
 ## Project Overview
 
-This repository contains my MSc Data Science dissertation project, **UK Energy Grid Resilience Prediction Using Open Data**. The project develops a data-driven framework to quantify and forecast short-term electricity grid resilience in **Great Britain (GB)** using publicly available operational, weather, and calendar datasets.
+This repository presents my MSc Data Science dissertation project, **UK Energy Grid Resilience Prediction Using Open Data**. The project develops a data-driven framework to quantify and forecast short-term electricity grid resilience in **Great Britain (GB)** using publicly available operational, weather, and calendar datasets.
 
-The core contribution is the construction of a **Grid Resilience Index (GRI)** that combines five operational dimensions of resilience into a single interpretable score:
+The study integrates multiple data sources and applies feature engineering and machine learning techniques to model grid behaviour. As part of this process, a **Grid Resilience Index (GRI)** is constructed to represent system resilience as a single, interpretable target variable. The index combines five key operational dimensions, conceptually aligned with international resilience frameworks from the National Infrastructure Advisory Council (USA), the UK Cabinet Office, and the Multidisciplinary Centre for Earthquake Engineering Research (MCEER):
 
-- Supply–Demand Margin
-- Fuel-Mix Diversity
-- Import Dependence
-- Storage Contribution
-- Frequency Stability
+- Supply–Demand Margin  
+- Fuel-Mix Diversity  
+- Import Dependence  
+- Storage Contribution  
+- Frequency Stability  
 
-The project then applies machine learning models to forecast the GRI **6 hours ahead** using time-based, operational, and weather-derived features.
+Using this framework, machine learning models are applied to forecast the GRI **6 hours ahead**, based on time-based, operational, and weather-derived features.
 
 ---
 
