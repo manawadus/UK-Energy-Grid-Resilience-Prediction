@@ -295,6 +295,19 @@ Overall, the results show that resilience is shaped by a combination of:
 
 ---
 
+  ## Recommended Figures
+
+Include these figures in results/figures/:
+
+- Daily average TSD trend
+- System frequency trend
+- Daily average GRI trend
+- Distribution of GRI components
+- Correlation heatmap
+- XGBoost diagnostic plots
+- SHAP feature importance plot
+
+---
 ## Limitations
 
 - GRI weights are based on modelling assumptions rather than validation against operator-defined resilience frameworks, which may affect real-world interpretability.
@@ -304,6 +317,23 @@ Overall, the results show that resilience is shaped by a combination of:
 - Storage activity within the dataset is relatively limited, reflecting its current share in the GB energy mix. As a result, its contribution to both the GRI and the predictive model is less pronounced.
 
 - Renewable generation effects are not explicitly modelled as standalone resilience channels, which may limit the ability to isolate their individual impact on grid stability.
+
+---
+
+## Reproducibility
+
+This project is based entirely on publicly available data sources. Data acquisition, integration, modelling, and interpretation steps are documented in notebooks and scripts so that the workflow can be reproduced.
+
+---
+## Author
+
+Suresh Manawadu
+MSc Data Science, Coventry University
+
+---
+## Note
+
+This repository is shared for academic and portfolio purposes. The GRI is a research construct and should not be used directly for operational decision-making without further validation.
 
 - Extreme low-resilience events are harder to predict accurately, as they are relatively rare and often driven by complex, unobserved operational conditions.
 
