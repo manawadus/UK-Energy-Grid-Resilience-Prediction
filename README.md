@@ -312,29 +312,31 @@ Overall, the results show that resilience is shaped by a combination of:
 
 ## Repository Structure
 
+```
 uk-energy-grid-resilience-prediction/
-│
+
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-│
+
 ├── data/
-│   ├── raw/            # (optional – can keep empty or README only)
+│   ├── raw/            # raw data (not included or minimal)
 │   └── processed/      # final dataset used for modelling
-│
+
 ├── notebooks/
 │   ├── 01_data_integration.ipynb
 │   ├── 02_gri_construction.ipynb
 │   ├── 03_feature_engineering.ipynb
 │   ├── 04_model_training.ipynb
 │   └── 05_evaluation.ipynb
-│
+
 ├── results/
-│   ├── figures/        # charts for README
-│   └── metrics/        # model results (csv/txt)
-│
+│   ├── figures/        # visualisations and plots
+│   └── metrics/        # model performance outputs
+
 ├── report/
 │   └── dissertation.pdf
-│
+
 └── docs/
     └── architecture_diagram.png
+```
