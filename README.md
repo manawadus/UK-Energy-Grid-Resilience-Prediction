@@ -287,32 +287,36 @@ Overall, the results show that resilience is shaped by a combination of:
 
 ## Methodological Strengths
 
-- fully open-data workflow
-- transparent and reproducible integration pipeline
-- explicit treatment of time alignment and settlement periods
-- interpretable GRI design
-- combined descriptive analysis, forecasting, diagnostics, and SHAP interpretation
+- Fully open-data workflow
+- Transparent and reproducible integration pipeline
+- Explicit treatment of time alignment and settlement periods
+- Interpretable GRI design
+- Combined descriptive analysis, forecasting, diagnostics, and SHAP interpretation
 
 ---
 
 ## Limitations
 
-- GRI weights are based on modelling judgement rather than operator validation
-- some important operational variables are absent from open sources
-- storage activity is relatively limited in the dataset
-- renewable effects are not fully isolated as standalone resilience channels
-- extreme events are harder to predict
-- the SVM model was trained on a reduced subset due to computational constraints, so comparison with XGBoost is not perfectly symmetrical
+- GRI weights are based on modelling assumptions rather than validation against operator-defined resilience frameworks, which may affect real-world interpretability.
 
+- The analysis relies on open-source data, which excludes key operational variables such as reserve capacity, generator outage schedules, and balancing or ancillary service actions. These factors influence real-time system behaviour and their absence may limit the model’s ability to fully capture grid dynamics.
+
+- Storage activity within the dataset is relatively limited, reflecting its current share in the GB energy mix. As a result, its contribution to both the GRI and the predictive model is less pronounced.
+
+- Renewable generation effects are not explicitly modelled as standalone resilience channels, which may limit the ability to isolate their individual impact on grid stability.
+
+- Extreme low-resilience events are harder to predict accurately, as they are relatively rare and often driven by complex, unobserved operational conditions.
+
+- The SVR model was trained on a reduced subset of the dataset due to computational constraints, so the comparison with XGBoost is not fully symmetrical.
 ---
 
 ## Repository Structure
 
-```text
-uk-energy-grid-resilience-prediction/
-├── data/
-├── notebooks/
-├── src/
-├── results/
-├── report/
-└── docs/
+The project follows a structured data pipeline approach:
+
+- `data/` – raw, interim, and processed datasets  
+- `notebooks/` – exploratory analysis and development  
+- `src/` – modular pipeline code for data processing and modelling  
+- `results/` – figures and evaluation outputs  
+- `report/` – dissertation and summary  
+- `docs/` – project documentation and architecture diagram  
