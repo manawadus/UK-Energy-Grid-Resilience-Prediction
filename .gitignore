@@ -1,0 +1,32 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Data files (IMPORTANT – avoid large uploads)
+data/raw/*
+data/processed/*
+
+# Keep folder structure
+!data/raw/README.md
+!data/processed/README.md
+
+# VS Code
+.vscode/
