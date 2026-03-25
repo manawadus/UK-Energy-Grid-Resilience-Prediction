@@ -18,7 +18,7 @@ Using this framework, machine learning models are applied to forecast the GRI **
 
 ## Research Aim
 
-The aim of this project is to develop a machine learning framework that predicts short-term grid resilience, up to **6 hours ahead**, by integrating electricity generation, demand, carbon intensity, weather, and time indicators into a unified analytical model.
+The aim of this project is to develop a machine learning framework that predicts short-term grid resilience, up to **6 hours ahead**, by integrating electricity generation, demand, weather, and time indicators into a unified analytical model.
 
 ---
 
