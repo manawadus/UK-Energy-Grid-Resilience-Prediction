@@ -312,11 +312,29 @@ Overall, the results show that resilience is shaped by a combination of:
 
 ## Repository Structure
 
-The project follows a structured data pipeline approach:
-
-- `data/` – raw, interim, and processed datasets  
-- `notebooks/` – exploratory analysis and development  
-- `src/` – modular pipeline code for data processing and modelling  
-- `results/` – figures and evaluation outputs  
-- `report/` – dissertation and summary  
-- `docs/` – project documentation and architecture diagram  
+uk-energy-grid-resilience-prediction/
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+├── data/
+│   ├── raw/            # (optional – can keep empty or README only)
+│   └── processed/      # final dataset used for modelling
+│
+├── notebooks/
+│   ├── 01_data_integration.ipynb
+│   ├── 02_gri_construction.ipynb
+│   ├── 03_feature_engineering.ipynb
+│   ├── 04_model_training.ipynb
+│   └── 05_evaluation.ipynb
+│
+├── results/
+│   ├── figures/        # charts for README
+│   └── metrics/        # model results (csv/txt)
+│
+├── report/
+│   └── dissertation.pdf
+│
+└── docs/
+    └── architecture_diagram.png
