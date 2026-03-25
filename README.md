@@ -324,20 +324,7 @@ Include these figures in results/figures/:
 
 This project is based entirely on publicly available data sources. Data acquisition, integration, modelling, and interpretation steps are documented in notebooks and scripts so that the workflow can be reproduced.
 
----
-## Author
 
-Suresh Manawadu
-MSc Data Science, Coventry University
-
----
-## Note
-
-This repository is shared for academic and portfolio purposes. The GRI is a research construct and should not be used directly for operational decision-making without further validation.
-
-- Extreme low-resilience events are harder to predict accurately, as they are relatively rare and often driven by complex, unobserved operational conditions.
-
-- The SVR model was trained on a reduced subset of the dataset due to computational constraints, so the comparison with XGBoost is not fully symmetrical.
 ---
 
 ## Repository Structure
@@ -370,3 +357,16 @@ uk-energy-grid-resilience-prediction/
 └── docs/
     └── architecture_diagram.png
 ```
+## Author
+
+Suresh Manawadu
+MSc Data Science, Coventry University
+
+---
+## Note
+
+This repository is shared for academic and portfolio purposes. The GRI is a research construct and should not be used directly for operational decision-making without further validation.
+
+- Extreme low-resilience events are harder to predict accurately, as they are relatively rare and often driven by complex, unobserved operational conditions.
+
+- The SVR model was trained on a reduced subset of the dataset due to computational constraints, so the comparison with XGBoost is not fully symmetrical.
