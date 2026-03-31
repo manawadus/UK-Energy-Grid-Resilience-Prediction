@@ -7,7 +7,7 @@ This project uses publicly available datasets from the following sources:
 ## Data Sources
 
 ### 1. Generation Mix (NESO)
-- Source: https://www.neso.energy/data-portal  
+- Source: https://www.neso.energy/data-portal/historic-generation-mix 
 - Features: Gas, Coal, Nuclear, Wind, Wind_EMB, Hydro, Biomass, Solar, Imports, Storage, Other, Carbon Intensity  
 - Time resolution: 30 minutes  
 - Format: CSV  
