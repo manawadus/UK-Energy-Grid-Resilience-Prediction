@@ -13,7 +13,7 @@ This project uses publicly available datasets from the following sources:
 - Format: CSV  
 
 ### 2. Electricity Demand (NESO)
-- Source: https://www.neso.energy/data-portal  
+- Source: https://www.neso.energy/data-portal/historic-demand-data
 - Features: Total GB Demand, England & Wales Demand, Scotland Demand  
 - Time resolution: 30 minutes  
 - Format: CSV  
