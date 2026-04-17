@@ -342,39 +342,27 @@ uk-energy-grid-resilience-prediction/
 │   └── processed/
 
 ├── scripts/
-│   ├── 01_data_acquisition/
+│   ├── data_acquisition/
 │   │   ├── frequency_download.py
 │   │   └── weather_acquisition.py
 │   │
-│   ├── 02_preprocessing/
+│   ├── file_preprocessing/
 │   │   └── split_generation_yearly.py
 │   │
-│   ├── 03_feature_engineering/
+│   ├── integration/
 │   │   ├── frequency_integration.py
 │   │   └── weather_integration.py
-│   │
-│   ├── 04_integration/
 │   │   └── demand_integration.py
 │   │
-│   ├── 05_master_dataset/
-│   │   └── yearly_aggregation.py
+│   ├── master_dataset/
+│   │   └── master_data_aggregation.py
 │   │
-│   └── 06_modeling/
-│       └── model_pipeline.py
+│   └── modeling/
+│       └── grid_resilience_prediction.py
 
 ├── notebooks/
 │   ├── 01_project_overview.ipynb
 │   └── 02_model_evaluation.ipynb
-
-├── results/
-│   ├── figures/
-│   └── metrics/
-
-├── report/
-│   └── dissertation.pdf
-
-└── docs/
-    └── architecture_diagram.png
 
 ```
 ## Author
